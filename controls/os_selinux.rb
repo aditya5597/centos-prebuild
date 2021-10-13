@@ -6,6 +6,6 @@ control "os-02" do                        # A unique ID for this control
   describe selinux do                  # The actual test
     it { should be_installed }
     it { should be_permissive }
-    it { should_not be_enabled }
+    it { should be_disabled }
   end
 end
